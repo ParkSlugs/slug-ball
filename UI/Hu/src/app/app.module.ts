@@ -13,10 +13,11 @@ import { MatTableModule } from '@angular/material/table';
 import { MatSelectModule } from '@angular/material/select';
 
 import { NavbarComponent } from './core';
-import { UserDetailComponent, UserListComponent } from './features';
 import { TableComponent } from './core/components/table/table.component';
 import { LiveScoreComponent } from './events/components/live-score/live-score.component';
 import { LeagueListComponent } from './events/components/league-list/league-list.component';
+import { UserListComponent } from './features/components/user/user-list/user-list.component';
+import { UserDetailComponent } from './features/components/user/user-detail/user-detail.component';
 
 @NgModule({
   declarations: [

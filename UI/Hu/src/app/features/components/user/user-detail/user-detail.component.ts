@@ -2,11 +2,11 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup  } from '@angular/forms';
 import { Observable, Subscription } from 'rxjs';
 import { ActivatedRoute } from '@angular/router';
-import { EntityDetailBaseComponent } from 'src/app/core';
-import { User } from '../../models';
-import { UserForm } from '../../form-models/user-form.model';
-import { UserService } from '../../services';
-import { Gender } from '../../enums';
+import { UserForm } from '../../../form-models/user-form.model';
+import { User } from '../../../models';
+import { EntityDetailBaseComponent } from '../../../../core/component-bases/entity-detail-base/entity-detail-base.component';
+import { Gender } from '../../../enums';
+import { UserService } from '../../../services';
 
 
 @Component({

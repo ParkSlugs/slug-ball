@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { EntityListBaseComponent } from 'src/app/core';
-import { User } from '../../models';
-import { UserService } from '../../services';
-import { Gender } from '../../enums';
-import { TableColumn } from 'src/app/core/models/table-column.model';
-import { InputType } from 'src/app/core/enums/input-type.enum';
+import { User } from '../../../models';
+import { UserService } from '../../../services';
+import { EntityListBaseComponent } from '../../../../core/component-bases/entity-list-base/entity-list-base.component'
+import { TableColumn } from '../../../../core/models/table-column.model';
+import { InputType } from '../../../../core/enums/input-type.enum';
+import { Gender } from '../../../enums';
+import { TableComponent } from '../../../../core/components/table/table.component'
 
 @Component({
   selector: 'app-user-list',

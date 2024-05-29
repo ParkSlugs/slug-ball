@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { UserDetailComponent, UserListComponent } from './features';
+import { UserDetailComponent } from './features/components/user/user-detail/user-detail.component';
 import { LiveScoreComponent } from './events/components/live-score/live-score.component';
 import { LeagueListComponent } from './events/components/league-list/league-list.component';
+import { UserListComponent } from './features/components/user/user-list/user-list.component';
 
 const routes: Routes = [
   {

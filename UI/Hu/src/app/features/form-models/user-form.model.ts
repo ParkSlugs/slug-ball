@@ -1,5 +1,5 @@
 import { FormControl } from "@angular/forms";
-import { EntityForm } from "src/app/core/models/entity-form.model";
+import { EntityForm } from "../../core/models/entity-form.model";
 
 export class UserForm extends EntityForm {
     userName!: FormControl<string | null | undefined>;

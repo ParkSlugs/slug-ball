@@ -1,4 +1,4 @@
-import { Entity } from "src/app/core/models/entity.model";
+import { Entity } from "../../core/models/entity.model";
 import { Gender } from "../enums";
 
 export class User extends Entity {
