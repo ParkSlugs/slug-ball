@@ -1,0 +1,14 @@
+<div>{{display}}</div>
+<form *ngIf="form" [formGroup]="form">
+
+    <div class="form-group">
+        <label class="isl-col-fixed-lg col-form-label-sm" for="tournamentId">Tournament</label>
+        <div class="col">
+            <select class="form-control form-control-sm" formControlName="tournamentId" name="tournamentId" value="tournamentId">
+            <option selected [ngValue]="0">All</option>
+            <option *ngFor="let tournament of tournaments" [ngValue]="tournament.id">{{tournament.id}}. {{tournament.category.name}} - {{tournament.name}}</option>
+            </select>
+        </div>
+    </div>
+</form>
+<app-table [items]="displayedScores" [columns]="tableColumns"></app-table>
