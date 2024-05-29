@@ -1,0 +1,60 @@
+<div class="container">
+    <form *ngIf="form" [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <mat-form-field appearance="fill">
+                        <mat-label>First Name</mat-label>
+                        <input formControlName="firstName" matInput="firstName" placeholder="First Name">
+                      </mat-form-field>
+                      <!-- <label for="firstName">First Name</label> -->
+                      <input formControlName="firstName" type="text" class="form-control" id="firstName" placeholder="First Name">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="surname">Last Name</label>
+                      <input formControlName="surname" type="text" class="form-control" id="surname" placeholder="Last Name">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="userName">UserName</label>
+                    <input formControlName="userName" type="text" class="form-control" id="userName" placeholder="UserName">
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input formControlName="password" type="password" class="form-control" id="password" placeholder="Password">
+                  </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="dateOfBirth">Date of Birth</label>
+                      <input formControlName="dateOfBirth" type="datetime-local" class="form-control" id="dateOfBirth">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="isl-col-fixed-lg col-form-label-sm" for="gender">Gender</label>
+                      <div class="col">
+                          <select class="form-control form-control-sm" formControlName="gender" name="gender" value="gender">
+                            <option [ngValue]="null" disabled> Please Select... </option>
+                            <option [ngValue]="genderEnum.Male"> {{genderEnum.getDescription(genderEnum.Male)}} </option>
+                            <option [ngValue]="genderEnum.Female"> {{genderEnum.getDescription(genderEnum.Female)}} </option>
+                            <option [ngValue]="genderEnum.NonBinary"> {{genderEnum.getDescription(genderEnum.NonBinary)}} </option>
+                          </select>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="mumsName">Mums Name</label>
+                    <input formControlName="mumsName" type="text" class="form-control" id="mumsName" placeholder="Your Mum">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input formControlName="email" type="text" class="form-control" id="email" placeholder="a@b.com">
+                  </div>
+            </div>
+            <div class="pt-1 d-block float-right">
+                <button type="submit" class="btn btn-primary" style="float: right;">Save</button>
+            </div>
+        </div>
+    </form>
+</div>

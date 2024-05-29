@@ -1,0 +1,6 @@
+@Hu.API_HostAddress = http://localhost:5183
+
+GET {{Hu.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
