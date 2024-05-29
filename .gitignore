@@ -3,6 +3,8 @@
 ################################################################################
 
 /.vs/
-/API/Hu.API/Hu.API/bin/
-/API/Hu.API/Hu.API/obj/
-/API/Hu.API/.vs/
+bin/
+obj/
+.vs/
+.suo
+/API/Hu.API/Hu.API/bin/Debug/net7.0/Hu.API.dll
