@@ -8,3 +8,4 @@ obj/
 .vs/
 .suo
 /API/Hu.API/Hu.API/bin/Debug/net7.0/Hu.API.dll
+/API/Hu.API/.vs/
